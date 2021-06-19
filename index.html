@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <header class="header-fixed">
+        <div class="header-limiter">
+            <h1><a href="#">SOARES<span>AYOIGBALA</span></a></h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="port.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="header-fixed-placeholder">
+        <script>
+            $(document).ready(function(){
+                var showHeaderAt = 150
+                var win = $(window),
+                    body = $('body');
+                
+                if(win.width() > 400){
+                    win.on('scroll', function(e){
+                        if(win.scrollTop() > showHeaderAt){
+                            body.addClass('fixed');
+                        }
+                        else{
+                            body.removeClass('fixed');
+                        }
+                    });
+                }
+            })
+        </script>
+
+    <section id="banner">
+        <!-- <img src="Ayo Mockup.jpg" class="logo" alt="" width="50">
+        <div class="logo-name">
+             <h4>My Portfolio</h4> -->
+        <!-- </div> --> 
+        <div class="banner-text">
+            <div class="hd-1">Hello,</div>
+            <div class="hd-2">I'M AYOIGBALA SOARES,</div>
+            <div class="hd-3">Expertised In Python Programming and Web Development.</div>
+            <div class="banner-btn">
+                <a href="#"><span></span>Read More</a>
+                <a href="#"><span></span>Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="about">
+    <div class="abt-row">
+        <div class="abt-column">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Ayo Mockup.jpg" alt="ayo" style="width: 100%; border-radius: 20%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-card-body">
+                            <h1>Soares Ayoigbala</h1>
+                            <p>Python Developer & Web Developer, Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="abt-column">
+            <div class="abt-body">
+                <div class="about-head">ABOUT ME</div>
+                <div class="about-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit ex rem maiores similique alias cumque totam iste a modi possimus esse, omnis sed expedita dolore saepe ipsam quidem facilis! Earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, eligendi cupiditate itaque nihil reprehenderit quisquam molestias voluptates et veritatis distinctio quia illum sapiente. Quidem ex vero veritatis fugiat, repellat doloribus.
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="services">
+        <div class="ser-body">
+        <div class="ser-head">SERVICES</div>
+        <div class="ser-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore blanditiis esse fuga dolore dolores atque sed. Odit saepe atque modi, unde quidem voluptate ea iusto a praesentium, recusandae explicabo!
+        </div>
+
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="circles"><i class="fas fa-python"></i></div>
+                    <div class="svbx-1">Python Developer</div>
+                    <div class="svbx-2">I expertise in Python Programming and Development. Also, I am learned in some of its frameworks like Django(for Web Applications) and GUI Building(Tkinter, Kivy and PyQT5).</div>
+                    <div class="svbtn"><button><a href="service.html">Read More</a></button></div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="circles"><i class="fas fa-html"></i></div>
+                    <div class="svbx-1">Web Developer And Designer</div>
+                    <div class="svbx-2">One of my main fields is Web Designing. I can build a responsive website of different kinds, either E-Commerce Website, Organization's Website e.t.c.</div>
+                    <div class="svbtn"><button><a href="service.html">Read More</a></button></div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="circles"><i class="fas fa-design"></i></div>
+                    <div class="svbx-1">Other Services</div>
+                    <div class="svbx-2">Other services that I can adequately provide is Graphics Designing. The best logos, business cards, banners e.t.c will be delivered to you without any delay.</div>
+                    <div class="svbtn"><button><a href="service.html">Read More</a></button></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="projects">
+        <div class="pro-head">My Projects</div>
+        
+        <div class="main">
+            <div class="pro-row">
+                <div class="pro-column">
+                    <div class="content">
+                        <img src="Ayo Mockup.jpg" alt="ayo" style="width: 100%;">
+                        <h3>My work...</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus non molestias atque alias libero rerum illo, magni veritatis fuga pariatur mollitia, delectus perspiciatis, et itaque maxime voluptate expedita. Sapiente, culpa!</p>
+                    </div>
+                </div>
+
+                <div class="pro-column">
+                    <div class="content">
+                        <img src="Ayo Mockup.jpg" alt="ayo" style="width: 100%;">
+                        <h3>My work...</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus non molestias atque alias libero rerum illo, magni veritatis fuga pariatur mollitia, delectus perspiciatis, et itaque maxime voluptate expedita. Sapiente, culpa!</p>
+                    </div>
+                </div>
+
+                <div class="pro-column">
+                    <div class="content">
+                        <img src="Ayo Mockup.jpg" alt="ayo" style="width: 100%;">
+                        <h3>My work...</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus non molestias atque alias libero rerum illo, magni veritatis fuga pariatur mollitia, delectus perspiciatis, et itaque maxime voluptate expedita. Sapiente, culpa!</p>
+                    </div>
+                </div>
+
+                <div class="pro-column">
+                    <div class="content">
+                        <img src="Ayo Mockup.jpg" alt="ayo" style="width: 100%;">
+                        <h3>My work...</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus non molestias atque alias libero rerum illo, magni veritatis fuga pariatur mollitia, delectus perspiciatis, et itaque maxime voluptate expedita. Sapiente, culpa!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-btn">
+                <a href="#"><span></span><div class="pbtnbody">See More</div></a>
+            </div>
+        </div>
+
+        
+    </div>
+
+    
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon-social-facebook"></i></a>
+                <a href="#"><i class="icon-social-discord"></i></a>
+                <a href="#"><i class="icon-social-git"></i></a>
+                <a href="#"><i class="icon-social-instagram"></i></a>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <p class="copyright">Codec-Hermes &copy; 2021</p>
+        </footer>
+    </div>
+
+
+    
+</div>
+</body>
+</html>

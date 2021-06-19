@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <header class="header-fixed">
+        <div class="header-limiter">
+            <h1><a href="#">SOARES<span>AYOIGBALA</span></a></h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="port.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="header-fixed-placeholder">
+        <script>
+            $(document).ready(function(){
+                var showHeaderAt = 150
+                var win = $(window),
+                    body = $('body');
+                
+                if(win.width() > 400){
+                    win.on('scroll', function(e){
+                        if(win.scrollTop() > showHeaderAt){
+                            body.addClass('fixed');
+                        }
+                        else{
+                            body.removeClass('fixed');
+                        }
+                    });
+                }
+            })
+        </script>
+
+   
+        <div class="contact-container">
+            <div style="text-align: center;">
+                <h2>CONTACT ME</h2>
+                <p>Leave a message or Contact me through my mobile number:<br />07050250008<br />Or through my E-mail Address:<br />ayoigbalas@gmail.com</p>
+            </div>
+
+            <div class="con-row">
+                <div class="con-column">
+                    <img src="Ayo Mockup.jpg" style="width: 100%;" />
+                </div>
+
+                <div class="con-column">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your First Name">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last Name">
+
+                        <label for="mobnum">Mobile Number</label>
+                        <input type="text" id="mobnum" name="mobilenumber" placeholder="Your Mobile Number">
+
+                        <label for="comment">Comment/Message</label>
+                        <textarea type="text" id="comment" name="comment/message" placeholder="Type Your Message Here..." style="height: 170px;"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            
+
+        </div>
+    
+    
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon-social-facebook"></i></a>
+                <a href="#"><i class="icon-social-discord"></i></a>
+                <a href="#"><i class="icon-social-git"></i></a>
+                <a href="#"><i class="icon-social-instagram"></i></a>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <p class="copyright">Codec-Hermes &copy; 2021</p>
+        </footer>
+    </div>
+
+
+    
+</div>
+</body>
+</html>

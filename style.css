@@ -1,0 +1,704 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 200px;
+}
+
+
+/* NAV-BAR SECTION */
+.header-fixed{
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px #ccc;
+    padding: 20px 40px;
+    height: 80px;
+    color: #ffffff;
+    box-sizing: border-box;
+    top: -100px;
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
+}
+
+.header-fixed .header-limiter{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-fixed-placeholder{
+    height: 80px;
+    /* display: none; */
+}
+
+.header-fixed .header-limiter h1{
+    float: left;
+    font-size: 28px;
+    font-family: 'baker signet';
+    line-height: 40px;
+    margin: 0;
+}
+
+.header-fixed .header-limiter h1 span{
+    color: #5383d3;
+}
+
+.header-fixed .header-limiter a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-fixed .header-limiter nav{
+    font: 16px arial, helvetica, sans-serif;
+    line-height: 40px;
+    float: right;
+}
+
+.header-fixed .header-limiter nav a{
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+    opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected{
+    color: #608bd2;
+    pointer-events: none;
+    opacity: 1;
+}
+
+body.fixed .header-fixed{
+    padding: 10px 40px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder{
+    display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav{
+    line-height: 28px;
+    font-size: 13px;
+}
+
+@media all and (max-width: 600px){
+    .header-fixed{
+        padding: 20px 0;
+        height: 75px;
+    }
+    .header-fixed .header-limiter h1{
+        float: none;
+        margin: -8px 0 10px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1;
+    }
+    .header-fixed .header-limiter nav{
+        line-height: 1;
+        float: none;
+    }
+    .header-fixed .header-limiter nav a{
+        font-size: 13px;
+    }
+    body.fixed .header-fixed{
+        display: none;
+    }
+}
+
+
+/* HEADER SECTION */
+*{
+    margin: 0;
+    padding: 0;
+   font-family:  sans-serif;
+}
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5), #ddddda),url(2019-12-13-cool-website-backgrounds.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    width: 200px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logo-name h4{
+    font-size: 15px;
+    font-family: 'Kaushan Script', cursive;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    margin-top: 110px;
+    color: #fff;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+    margin-right: 60%;
+    margin-top: -1%;
+}
+
+.banner-text h1{
+    font-size: 60px;
+    font-family: 'Trajan', cursive;
+    margin-right: 60%;
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'baker signet';
+    margin-right: 60%;
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+}
+
+.banner-btn a{
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+.banner-btn a:hover{
+    color: black;
+}
+
+.hd-1{
+    color: black;
+    text-shadow: 1px 1px 3px white;
+    font-family: 'amaranth';
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.hd-2{
+    color: black;
+    text-shadow: 1px 1px 3px white;
+    font-family: 'amaranth';
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.hd-3{
+    color: grey;
+    text-shadow: 1px 1px 3px white;
+    font-family: 'amaranth';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .hd-1{
+        font-size: 150%;
+    }
+    .hd-2{
+        font-size: 150%;
+    }
+    .hd-3{
+        font-size: 150%;
+    }
+}
+
+
+/* ABOUT SECTION */
+.about{
+    box-sizing: content-box;
+    border: 1px solid white;
+    background-color: #ddddda;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    border-radius: 20%;
+    perspective: 1000px;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;   
+    backface-visibility: hidden;
+}
+
+.flip-card-front{
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back{
+    background-color: #c2cbc5;
+    border-radius: 20%;
+    font-family: 'baker signet';
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-body{
+    margin-top: 10%;
+    font-family: 'baker signet';
+}
+
+.abt-body{
+    margin-right: 5%;
+    margin-top: 7%;
+}
+
+.about-head{
+    font-family: 'lithos';
+    text-align: center;
+    font-stretch: 3px;
+    font-size: 30px;
+    margin-bottom: 1%;
+}
+
+.about-body{
+    font-family: 'baker signet';
+    text-align: center;
+    margin: 0 3px 0 3px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .abt-body{
+        font-size: 10px;
+    }
+}
+
+.abt-column{
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 10px;
+}
+
+.abt-row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px){
+    .abt-column{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* SERVICES */
+
+.services{
+    margin-top: 5%;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    height: 700%;
+    border: 1px solid white;
+    background-color: #ddddda;
+}
+
+.ser-head{
+    font-family: 'lithos';
+    text-align: center;
+    font-stretch: 3px;
+    font-size: 30px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.ser-body{
+    font-family: 'baker signet';
+    text-align: center;
+    margin: 0 10px 3% 10px;
+    font-size: 20px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.column{
+    float: left;
+    width: 25%;
+    padding: 0 10px 0 25px;
+    margin-left: 5%;
+}
+
+.row{
+    margin: 0 -5px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color:grey;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .services{
+        height: 1400%;
+    }
+
+    .column{
+        width: 90%;
+        margin-left: 3%;
+        display: block;
+        margin-bottom: 20px;
+        font-size: 10px;
+        padding: 0 10px;
+    }
+}
+
+
+.circles{
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 5px; */
+    margin-left: 10%;
+    height: 50px;
+    width: 50px;
+    background: aqua;
+    color: yellow;
+}
+
+.svbx-1{
+    text-align: center;
+    font-family: 'lithos';
+    font-size: 25px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.svbx-2{
+    text-align: center;
+    font-family: 'baker signet';
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+.svbtn button{
+    border: 1px solid white;
+    border-radius: 20px;
+    background: linear-gradient(to top left, rgb(0, 247, 255), rgb(245, 28, 245));
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'cronos';
+    text-shadow: 1px 1px 3px grey;
+    margin-left: 5%;
+    width: 37%;
+    height: 40px;
+}
+
+.svbtn button:hover{
+    background: linear-gradient(to bottom right, rgb(85, 241, 247), rgb(245, 28, 245));
+    color: white;
+    box-shadow: 2px 2px 4px grey;
+}
+
+
+
+/* PROJECT SECTION */
+.projects{
+    margin-top: 7%;
+    margin-bottom: 5%;
+    margin-right: 3%;
+    margin-left: 3%;
+    border: 1px solid white;
+    background-color: #ddddda;
+} 
+
+.pro-head{
+    font-family: 'lithos';
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.pro-row{
+    margin: 8px -16px;
+}
+
+.pro-row, .pro-row > .pro-column{
+    padding: 8px;
+}
+
+.pro-column{
+    float: left;
+    width: 25%;
+}
+
+.pro-row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pro-row, .pro-row > .pro-column .content h1 p{
+    font-family: 'baker signet'
+}
+
+.content{
+    background-color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .pro-column{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .pro-column{
+        width: 100%;
+    }
+}
+
+.project-btn{
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+
+.project-btn a{
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: grey;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.project-btn a span{  /*hover slide through*/
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, #ddddda, grey);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.pbtnbody{
+    margin-left: 28%;
+}
+
+.project-btn a:hover span{
+    width: 100%;
+}
+.project-btn a:hover{
+    color: black;
+    background-color: grey;
+
+}
+
+
+
+
+/* FOOTER SECTION */
+.footer-basic{
+    padding: 100px 0;
+    background-color: #ddddda;
+    color: #4b4c4d;
+}
+
+.footer-basic nav{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-family: 'baker signet';
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic a{
+    padding: 0 10px;
+}
+
+.footer-basic nav a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.footer-basic nav a:hover{
+    opacity: 1;
+}
+
+.footer-basic .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social > a{
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0 8px;
+    color: inherit;
+    background: white;
+    opacity: 0.75;
+}
+
+.footer-basic .social > a:hover{
+    opacity: 0.9;
+    background-color: #ddddda;
+    box-shadow: inset 1px 1px 3px grey;
+}
+
+.footer-basic .copyright{
+    font-family: 'sanvito';
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(143, 141, 141);
+    margin-bottom: 0;
+}
+
+
+/* CONTACT PAGE */
+
+*{
+    box-sizing: border-box;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #ddddda;
+    transition: all ease-in-out 0.5s;
+}
+
+.contact-container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.con-column{
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.con-row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px){
+    .con-column, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
